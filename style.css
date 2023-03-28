@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+html {
+    background-color: hsl(185, 75%, 39%);
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+h1, a, p {
+    font-family: Kumbh Sans, sans-serif; 
+}
+a {
+    font-weight: 400;
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+}
+h1 {
+    font-weight: 700;
+    font-size: 18px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; position: relative;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);      
+}
+
+.container {
+    width: 350px;
+	height: 375px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	position: absolute;
+    background-size: contain;
+    overflow: hidden;   
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+    z-index: 2;
+}
+.card-background {
+    position: fixed;
+    top: 0px;    
+    z-index: 3;
+}
+.background {
+    width: 377px;
+    height: 141px;
+}
+.card-pic {
+    position: absolute;
+    top: 85px;    
+    z-index: 4;
+}
+.text-profile {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 85px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Outfit;
+    font-size: 18px;
+    z-index: 4;
+    
+  }
+  
+  .name {
+    margin-right: 10px;
+    font-weight: 700;
+    color: black;
+    z-index: 4;
+  }
+  
+  .age {
+    color: hsl(0, 0%, 59%);
+    z-index: 4;
+  }
+  
+  .location {
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    bottom: -60px;
+    color: hsl(0, 0%, 59%);
+    z-index: 4;
+  }
+  .ruler {
+    display: flex;
+    position: relative;
+    top: 10px;
+    width:350px;
+    height: 1px;
+    transform: scaleY(0.5);
+    color: hsl(0, 0%, 100%);
+    z-index: 4;
+
+  }
+
+.round-image {
+    border-radius: 50%;
+    border: 7px solid white;
+    
+}
+.summary {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .stats,
+  .likes,
+  .photos {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px; /* add margin between the groups */
+    top: 85px;
+
+    
+  }
+  
+  .stats:last-child,
+  .likes:last-child,
+  .photos:last-child {
+    margin-right: 0; /* remove margin from the last group */
+  }
+  
+  .stats h1,
+  .likes h1,
+  .photos h1 {
+    margin: 0;
+  }
+  
+  .stats p,
+  .likes p,
+  .photos p {
+    margin: 0;
+  }
+  .parent-element {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+  }
+  
+  .circle-background {
+    background-image: url('/images/bg-pattern-top.svg');
+    background-position: top left;
+    background-size: contain;
+    width: 978px;
+    height: 978px;
+    position: absolute;
+    top: -489px;
+    left: -489px;
+    z-index: 1;
+  }
+  
+  .circle-background2 {
+    background-image: url('/images/bg-pattern-bottom.svg');
+    background-position: bottom right;
+    background-size: contain;
+    width: 978px;
+    height: 978px;
+    position: absolute;
+    bottom: -489px;
+    right: -489px;
+    z-index: 1;
+  }
+
+.profile-picture {
+    position: absolute;
+    top: -130px;    
+    transform: scale(0.50);
+    border-radius: 20px;
+}
+
+
