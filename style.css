@@ -68,7 +68,8 @@ h1 {
     font-family: Outfit;
     font-size: 18px;
     z-index: 4;
- }
+    
+  }
   
   .name {
     margin-right: 10px;
@@ -119,7 +120,7 @@ h1 {
     position: relative;
     flex-direction: column;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 50px; /* add margin between the groups */
     top: 85px;
 
     
@@ -128,7 +129,7 @@ h1 {
   .stats:last-child,
   .likes:last-child,
   .photos:last-child {
-    margin-right: 0;
+    margin-right: 0; /* remove margin from the last group */
   }
   
   .stats h1,
@@ -151,7 +152,7 @@ h1 {
   
   .circle-background {
     background-image: url('./images/bg-pattern-top.svg');
-    background-position: top left;
+    background-position: bottom left;
     background-size: contain;
     width: 978px;
     height: 978px;
@@ -163,7 +164,7 @@ h1 {
   
   .circle-background2 {
     background-image: url('./images/bg-pattern-bottom.svg');
-    background-position: bottom right;
+    background-position: top left;
     background-size: contain;
     width: 978px;
     height: 978px;
